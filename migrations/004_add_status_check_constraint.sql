@@ -1,0 +1,3 @@
+ALTER TABLE orders
+ADD CONSTRAINT CK_orders_status
+CHECK (status IN ('PENDING', 'SHIPPED', 'DELIVERED', 'CANCELLED'));
